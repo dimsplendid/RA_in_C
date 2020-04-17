@@ -1,0 +1,4 @@
+test_RA_in_C
+*.o
+*~
+tmp*
