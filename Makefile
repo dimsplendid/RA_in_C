@@ -7,7 +7,7 @@ OBJS=$(SRCS:.c=.o)
 all: RA_in_C
 
 test: test.sh src/test.c
-	$(CC) $(CFLAGS) src/test.c -o test_RA_in_C
+	$(CC) $(CFLAGS) -o test_RA_in_C $(LDFLAGS) -o RA_in_C $(OBJS)
 	./test.sh
 
 RA_in_C: $(OBJS) 

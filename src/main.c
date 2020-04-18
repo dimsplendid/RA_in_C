@@ -7,11 +7,12 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    // tokenized
-    token = tokenize(argv[1]);
+    // Load config files.
 
-    while (!at_eof()) {
-        printf("-%d\n", expect_number());
-    }
-    return 0;
+    // Run command loop.
+    // lsh_loop();
+
+    // Perform any shutdown/cleanup.
+
+    return EXIT_SUCCESS;
 }
